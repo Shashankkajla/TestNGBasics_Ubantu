@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="RetryFailedTestCase Suite" verbose="1">
+
+<listeners>
+<listener class-name="com.analyzer.RetryAnnotationTransformer"/>
+</listeners>
+
+  <test thread-count="5" name="RetryMultipleFailedTestCase">
+    <classes>
+   <!--  <class name="com.practise.DemoTest"/>
+    <class name="com.practise.Suite"/> -->
+        <class name="com.practise.TestNGRetryLogics"/>
+    
+    <!-- if you want to execute retry login for all classes gibe class name= "packagename.*", it will
+    be applicable for all the classes  -->
+    
+    </classes>
+    
+    
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
